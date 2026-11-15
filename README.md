@@ -1,18 +1,18 @@
-# 🤖 Discord.js Bot
+# Discord.js Bot
 
 A modular Discord bot developed with [discord.js v14](https://discord.js.org/), designed so anyone can clone it and easily build their own bot with custom commands.
 
-## 🚀 Features
+## Features
 
-- ✅ Modular command structure (Slash Commands)
-- ⚙️ Automatic command loading system
+- Modular command structure (Slash Commands)
+- Automatic command loading system
 
-## 🧰 Requirements
+## Requirements
 
 - Node.js v18 or higher
 - A bot account in the [Discord Developer Portal](https://discord.com/developers/applications)
 
-## 📦 Installation
+## Installation
 
 Clone the repository:
 
@@ -37,7 +37,7 @@ npm run start
    
 This will also automatically register the slash commands.
 
-🗂️ Project structure
+Project structure
 ```shell
 .
 ├── commands/            # Folder for your slash commands
@@ -49,9 +49,9 @@ This will also automatically register the slash commands.
 └── main.js              # Main entry point of the bot
 ```
 
-# 🛠️ How to Create a Command
+# How to Create a Command
 
-## 📁 Location
+## Location
 All commands should be in this folder:
 
 ```bash
@@ -59,7 +59,7 @@ All commands should be in this folder:
 ```
 Each command is a .js file that exports a valid Slash Command object, using the SlashCommandBuilder from discord.js.
 
-## 🧱 Basic Structure of a Command
+## Basic Structure of a Command
 
 ```js
 // commands/ping.js
@@ -76,25 +76,25 @@ module.exports = {
   },
 };
 ```
-## 🧩 Important Details
+## Important Details
 data: Defines the name and description of the command.
 execute: This is the function that is executed when the user uses the command.
 
 The bot already includes a system that automatically detects these files thanks to loadCommands.js.
 You will need to restart the bot to be able to register slash commands.
 
-## 🔄 Command not appearing?
+## Command not appearing?
 Make sure:
 
 The file is in /commands/
 The bot has the correct application permissions
 Handlers/deploy.js was successfully executed on startup
 
-## 🤝 Contributions
+## Contributions
 Contributions are welcome! You can submit issues, suggestions, or pull requests.
 
-## 📄 License
+## License
 This project is under the ISC license. Use, modify, and distribute it as you wish.
 
-## 🌐 Credits
-Created by Smoky with 💙 for the Discord community.
+## Credits
+Created by Agustina with 💙 for the Discord community.
